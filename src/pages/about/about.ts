@@ -6,9 +6,12 @@ import { NavController } from 'ionic-angular';
   templateUrl: 'about.html'
 })
 export class AboutPage {
-
+  private nome:string = "Mauricio Zaha";
   constructor(public navCtrl: NavController) {
 
   }
 
+  public getNome():string{
+    return this.nome;
+  }
 }
